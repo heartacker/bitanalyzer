@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.6
+#!/usr/bin/env python3.9
 #encoding=utf-8
 import os,json,re,sys
 from PyQt5.QtCore import QFileInfo
@@ -11,17 +11,17 @@ CFG = {"version" : "1.0", "bcolor" : "#55ffff", "language" : "English" }
 LG = {
     "app_name": ["BitAnalyzer", "比特分析器"],
     "color"   : ["color", "颜色"],
-    "left"    : ["left","左移"],
-    "right"   : ["right","右移"],
-    "MSB"     : ["MSB","高位"],
-    "clear"   : ["clear","清空"],
-    "ones"    : ["1 numbers","1数量"],
-    "sub"     : ["sub","段"],
-    "newpanel": ["new panel","新面板"],
-    "help"    : ["help","帮助"],
-    "about"   : ["about","关于"],
-    "guide"   : ["guide","使用说明"],
-    "language": ["language","语言"]
+    "left"    : ["left", "左移"],
+    "right"   : ["right", "右移"],
+    "MSB"     : ["MSB", "高位"],
+    "clear"   : ["clear", "清空"],
+    "ones"    : ["1 numbers", "1数量"],
+    "sub"     : ["sub", "段"],
+    "newpanel": ["new panel", "新面板"],
+    "help"    : ["help", "帮助"],
+    "about"   : ["about", "关于"],
+    "guide"   : ["guide", "使用说明"],
+    "language": ["language", "语言"]
 }
 
 class MAIN_UI(QMainWindow):

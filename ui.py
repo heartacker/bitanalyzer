@@ -485,7 +485,7 @@ class UI_FORM(QWidget):
                 self.CFG["version"])
             QMessageBox.about(self, LG['about'][self.lg], about_str)
         elif cmd == 'guide':
-            webbrowser.open('https://github.com/qiaomufenlin')
+            webbrowser.open('https://gitcode.net/weixin_37548620/bitanalyzer/-/tree/master/help')
         elif cmd == 'newpanel':
             self.ui_signal_newpanel.emit(panelname, self.DS.hex_value)
         elif cmd == 'lang_e' or cmd == 'lang_c':
