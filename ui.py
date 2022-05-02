@@ -481,7 +481,7 @@ class UI_FORM(QWidget):
                 about_str = "Author : Yukun.Gong\nVersion: %s\nCreate : 2022-5-1" % (
                 self.CFG['version'])
             else:
-                about_str = "作者: 巩玉坤\n版本: %s\n创建: 2022-XX-XX" % (
+                about_str = "作者: 巩玉坤\n版本: %s\n创建: 2022-5-1" % (
                 self.CFG["version"])
             QMessageBox.about(self, LG['about'][self.lg], about_str)
         elif cmd == 'guide':
