@@ -1,9 +1,9 @@
 # 说明
 + 用于寄存器分析，比特流分析，数据结构分析。
 + 使用Python3+PyQt5实现。
-+ ![help](help/help.png)
+![help](help/help.png)
 
-# 注
+## 注
 + ready目录有打包好的windows版程序，可以直接下载使用。
 + pyinstall打包的程序，杀毒软件可能误报，添加信任即可。
 + 不放心的话下载源码自己打包啊。
