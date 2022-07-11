@@ -1,6 +1,8 @@
 #!/usr/bin/env python3.9
 #encoding=utf-8
 import os,json,re,sys
+
+from PyQt5 import QtCore, QtGui
 from PyQt5.QtCore import QFileInfo
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QMainWindow, QWidget, QHBoxLayout, QScrollArea, \
@@ -23,6 +25,7 @@ LG = {
     "guide"   : ["guide", "使用说明"],
     "language": ["language", "语言"]
 }
+
 
 class MAIN_UI(QMainWindow):
     def __init__(self, panel="standard", hex_value=""):
@@ -76,6 +79,11 @@ class MAIN_UI(QMainWindow):
 
 
 if __name__ == "__main__":
+    # 适应高DPI设备
+    QtCore.QCoreApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling)
+    # 适应Windows缩放
+    QtGui.QGuiApplication.setAttribute(
+        QtCore.Qt.HighDpiScaleFactorRoundingPolicy.PassThrough)
     app = QApplication(sys.argv)
     mainWindow = MAIN_UI()
     mainWindow.show()
