@@ -1,7 +1,7 @@
 # 说明
 + 用于寄存器分析，比特流分析，数据结构分析。
 + 使用Python3+PyQt5实现。
-+ ![help](https://gitcode.net/weixin_37548620/bitanalyzer/-/blob/master/help/help.gif)
++ ![help](https://gitcode.net/weixin_37548620/bitanalyzer/help/help.png)
 
 # 注
 + ready目录有打包好的windows版程序，可以直接下载使用。
