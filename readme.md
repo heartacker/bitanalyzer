@@ -15,6 +15,6 @@ pyinstall打包的程序，杀毒软件可能误报，添加信任即可。
 5、pip install pywin32
 
 cmd:
-> git clone git@gitcode.net:weixin_37548620/bitanalyzer.git
-> cd bitanalyzer
-> run.bat
+git clone git@gitcode.net:weixin_37548620/bitanalyzer.git
+cd bitanalyzer
+run.bat
