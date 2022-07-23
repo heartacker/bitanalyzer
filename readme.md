@@ -4,7 +4,7 @@
 ![help](help/help.gif)
 
 ## 注
-+ ready目录有打包好的windows版程序，可以直接下载使用。
++ ready目录有打包好的windows版程序，可以直接下载使用。[download](./ready/BitAnalyzer.zip)
 + pyinstall打包的程序，杀毒软件可能误报，添加信任即可。
 + 不放心的话下载源码自己打包啊。
 
