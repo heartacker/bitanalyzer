@@ -9,7 +9,7 @@ from PyQt5.QtWidgets import QMainWindow, QWidget, QHBoxLayout, QScrollArea, \
     QApplication
 from ui import *
 
-CFG = {"version" : "1.0", "bcolor" : "#55ffff", "language" : "English" }
+CFG = {"version" : "1.1", "bcolor" : "#55ffff", "language" : "English" }
 LG = {
     "app_name": ["BitAnalyzer", "比特分析器"],
     "color"   : ["color", "颜色"],
