@@ -275,8 +275,7 @@ class UI_FORM(QWidget):
         btn_lshift = QPushButton('<<', self)
         btn_lshift.move(380, 8)
         btn_lshift.resize(20, 30)
-        btn_lshift.clicked.connect(
-            lambda: self.evt_shift_btn(LG['left'][self.lg]))
+        btn_lshift.clicked.connect(lambda: self.evt_shift_btn('left'))
 
         self.tx_shift = QLineEdit(self)
         self.tx_shift.setText('1')
@@ -292,8 +291,7 @@ class UI_FORM(QWidget):
         btn_rshift = QPushButton('>>', self)
         btn_rshift.move(420, 8)
         btn_rshift.resize(20, 30)
-        btn_rshift.clicked.connect(
-            lambda: self.evt_shift_btn(LG['right'][self.lg]))
+        btn_rshift.clicked.connect(lambda: self.evt_shift_btn('right'))
 
         lb_msb = QLabel(LG["MSB"][self.lg], self)
         lb_msb.move(455, 18)
