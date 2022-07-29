@@ -9,7 +9,8 @@ from PyQt5.QtWidgets import QMainWindow, QWidget, QHBoxLayout, QScrollArea, \
     QApplication
 from ui import *
 
-CFG = {"version" : "1.2", "bcolor" : "#55ffff", "language" : "English" }
+version = "1.3"
+CFG = {"bcolor" : "#55ffff", "language" : "English" }
 LG = {
     "app_name": ["BitAnalyzer", "比特分析器"],
     "color"   : ["color", "颜色"],
@@ -32,7 +33,6 @@ class MAIN_UI(QMainWindow):
             try:
                 with open("config.json", 'r') as cfg_file:
                     cfgs = json.load(cfg_file)
-                    if "version"  in cfgs: CFG["version"]  = cfgs["version"]
                     if "bcolor"   in cfgs: CFG["bcolor"]   = cfgs["bcolor"]
                     if "language" in cfgs: CFG["language"] = cfgs["language"]
             except:
@@ -40,7 +40,7 @@ class MAIN_UI(QMainWindow):
 
         lg = 0 if CFG["language"]=="English" else 1
 
-        titl_str = (LG["app_name"][lg]+" V"+CFG["version"]) if panel=="standard" else panel
+        titl_str = (LG["app_name"][lg]+" V"+version) if panel=="standard" else panel
         self.setWindowTitle(titl_str)
         self.setWindowIcon(QIcon(os.path.join('img', 'icon.png')))
         self.resize(1000, 200)
