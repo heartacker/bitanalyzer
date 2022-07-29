@@ -12,31 +12,31 @@
 + 支持鼠标右键：清空、取反、数1的数量；
 + 支持鼠标右键：新面板选择；用户自定义面板（数值拆分、数值解析）；
 + 支持鼠标右键帮助、语言选择；
-![help](help/help.gif)
+  - ![help](help/help.gif)
 
 ## 新面板选择
 + 鼠标右键->新面板->（选择）
-![help](help/new_panel_0.png)
+  - ![help](help/new_panel_0.png)
 + standard面板是默认的标准面板（启动面板）
 + 红圈部分是用户可自定义的面板，这里其实是工具路径user目录下的电子表格文件名：
-![help](help/new_panel_1.png)
+  - ![help](help/new_panel_1.png)
 + 用户可以将自定义的模板表格放在该目录。先看一下效果：
-![help](help/new_panel_2.png)
+  - ![help](help/new_panel_2.png)
 + 用户自定义模板支持域段自动拆分及数值含义解析；
 + 看一下工具提供的user/test_panel0.xls，其sheet的名字作为”位宽模板“选项
-![help](help/new_panel_3.png)
+  - ![help](help/new_panel_3.png)
 + 看一下示例form0表格的内容：
-![help](help/new_panel_4.png)
+  - ![help](help/new_panel_4.png)
 + 第一行依次为：total/end/start/name/spec/value_spec
   - total: 在A2单元格填入模板总bit数量；
   - end/start: 按行填入各个域段的结束bit和起始bit；
   - name: 按行填入各个域段的命名；
   - spec: 按行填入命名的含义，该含义会在鼠标指向面板域段名是悬浮显示；
-  ![help](help/new_panel_5.png)
+    - ![help](help/new_panel_5.png)
   - value_spec: 按值填入该域段的不同值的含义，数值拆分解析时会显示在面板中；
-  ![help](help/new_panel_6.png)
+    - ![help](help/new_panel_6.png)
   - total：在A3单元格填入的值会显示在面板最下边；
-  ![help](help/new_panel_7.png)
+    - ![help](help/new_panel_7.png)
 + 
 
 
